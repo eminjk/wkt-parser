@@ -84,7 +84,7 @@ class Lexer extends AbstractLexer
      */
     public function value(): mixed
     {
-        return $this->token['value'];
+        return $this->token->value;
     }
 
     /**
