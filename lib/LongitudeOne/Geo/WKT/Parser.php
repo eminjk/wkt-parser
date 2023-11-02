@@ -103,7 +103,7 @@ class Parser
     protected function match($token): void
     {
         if ($this->lexer->lookahead !== null) {
-            $lookaheadType = $this->lexer->lookahead['type'];
+            $lookaheadType = $this->lexer->lookahead->type;
         }
 
         if (!isset($lookaheadType) || ($lookaheadType !== $token && ($token !== Lexer::T_TYPE || $lookaheadType <= Lexer::T_TYPE))) {
